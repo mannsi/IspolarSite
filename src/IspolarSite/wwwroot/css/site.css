@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: "Verdana";
 }
 
 /* Wrapping element */
@@ -8,6 +9,7 @@
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 60px;
 }
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
@@ -17,18 +19,48 @@ textarea {
     max-width: 280px;
 }
 
-/* Carousel */
-.carousel-caption {
-    z-index: 10 !important;
+#logoImage {
+    height: 50px;
 }
 
-    .carousel-caption p {
-        font-size: 20px;
-        line-height: 1.4;
-    }
+.navbar {min-height:80px !important;}
 
-@media (min-width: 768px) {
-    .carousel-caption {
-        z-index: 10 !important;
-    }
+.navbar-brand {
+    float: left;
+    padding: 11px 15px;
+    font-size: 35px;
+    line-height: 55px;
+    height: 40px;
+}
+
+.navbar-nav>li>a {
+    line-height: 55px;
+    height: 40px;
+    font-size: 15px;
+}
+
+/* set a max-width for horizontal fluid layout and make it centered */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px; /* or 950px */
+}
+
+.navbar-inverse .nav-link:hover, 
+.navbar-inverse .nav-link:focus {
+  background-color: transparent;
+  color: #999999;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, 
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > li.dropdown.active.open > a{
+    background-color: transparent !important;
+}
+
+#productsDropdown {
+    margin-top: 15px;
 }
