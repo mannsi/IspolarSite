@@ -10,20 +10,25 @@
 
     <environment names="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-theme.css" />*@
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/agency.css" />
         <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment names="Staging,Production">
-        <link rel="stylesheet" href="https://bootswatch.com/cerulean/bootstrap.min.css"
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="https://bootswatch.com/cerulean/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/theme-bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"/>
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"
-              asp-fallback-href="~/lib/font-awesome/css/font-awesome.min.css" />
+              asp-fallback-href="~/lib/font-awesome/css/font-awesome.min.css"/>
     </environment>
 </head>
 <body>
-    <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -32,12 +37,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-controller="Home" asp-action="Index" class="navbar-brand">
-                    <img id="logoImage" src="~/images/ipolar_logo_trans_small.gif">
-                </a>
-                <a class="navbar-brand" asp-controller="Home" asp-action="Index">Íspólar</a>
+                <a asp-controller="Home" asp-action="Index" class="nav-link"><img id="logoImage" src="~/images/ipolar_logo_trans_small.gif"></a>
+                @*<a class="navbar-brand" asp-controller="Home" asp-action="Index">Íspólar</a>*@
             </div>
-            <ul class="nav navbar-nav">
+            @*<ul class="nav navbar-nav">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Products <span class="caret"></span></a>
                     <ul id="productsDropdown" class="dropdown-menu" role="menu">
@@ -48,7 +51,7 @@
                         <li><a href="#">Other products</a></li>
                     </ul>
                 </li>
-            </ul>
+            </ul>*@
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-item">
@@ -63,7 +66,9 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <div class="footer navbar-fixed-bottom text-center" style="height: 50px; background-color: 	#E8E8E8  ">
+
+        <div class="footer navbar-fixed-bottom text-center">
+            <hr />
             <h4 class="text-muted">Ispolar ltd - Borgartúni 30 - Tel: +354 517 8880</h4>
         </div>
     </div>
