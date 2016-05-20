@@ -11,6 +11,7 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 80px;
+    padding-bottom: 80px;
     /*background-color: rgb(245, 245, 245);*/
     /*height: 100% !important;*/
 }
@@ -27,77 +28,11 @@ textarea {
     height: 60px;
 }
 
-/*.navbar {min-height:80px !important;}*/
-
-/*.navbar-brand {
-    float: left;
-    padding: 11px 15px;
-    font-size: 35px;
-    line-height: 55px;
-    height: 40px;
-}*/
-
-/*.navbar-nav>li>a {
-    line-height: 55px;
-    height: 40px;
-    font-size: 15px;
-}*/
-
-/* set a max-width for horizontal fluid layout and make it centered */
-/*.container {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 900px;
-}*/
-
-/*.navbar-inverse .nav-link:hover, 
-.navbar-inverse .nav-link:focus {
-  background-color: transparent;
-  color: #999999;
-}*/
-
-/*.navbar-inverse .navbar-nav > li > a:hover, 
-.navbar-inverse .navbar-nav > li > a:focus,
-.navbar-inverse .navbar-nav > .active > a, 
-.navbar-inverse .navbar-nav > .active > a:hover, 
-.navbar-inverse .navbar-nav > .active > a:focus,
-.navbar-inverse .navbar-nav > li.dropdown.active.open > a{
-    background-color: transparent !important;
-}*/
-
-/*#productsDropdown {
-    margin-top: 15px;
-}*/
-
 .footer {
-    height: 80px;
-    /*background-color: #E8E8E8;*/
+    height: 50px;
+    background-color: rgb(248, 248, 248);
 }
 
-/*===Centering images in row===*/
-/*.thumbnail_container {
-     position: relative;
-     width: 100%;
-     padding-bottom: 100%;
-     margin-bottom:20px;
+.img-center {
+    margin: 0 auto;
 }
-
-.thumbnail {
-    position:absolute;
-    width:100%;
-    height:100%;
-}
-.thumbnail img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-img{
-    max-height:100%;
-    max-width:100%;
-}*/
-/*===Centering images in row===*/
