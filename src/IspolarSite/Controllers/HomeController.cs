@@ -12,6 +12,7 @@ namespace IspolarSite.Controllers
         public IActionResult Index()
         {
             ViewBag.ShowBanner = true;
+            ViewBag.ShowCarousel = false;
             return View();
         }
 
@@ -19,6 +20,7 @@ namespace IspolarSite.Controllers
         public IActionResult About()
         {
             ViewBag.ShowBanner = true;
+            ViewBag.ShowCarousel = false;
             return View();
         }
 
@@ -26,6 +28,7 @@ namespace IspolarSite.Controllers
         public IActionResult Species()
         {
             ViewBag.ShowBanner = true;
+            ViewBag.ShowCarousel = false;
             return View();
         }
 
@@ -33,6 +36,7 @@ namespace IspolarSite.Controllers
         public IActionResult Contact()
         {
             ViewBag.ShowBanner = true;
+            ViewBag.ShowCarousel = false;
             return View();
         }
     }
