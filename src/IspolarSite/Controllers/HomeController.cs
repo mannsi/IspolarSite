@@ -11,18 +11,28 @@ namespace IspolarSite.Controllers
         [Route("")]
         public IActionResult Index()
         {
+            ViewBag.ShowBanner = true;
             return View();
         }
 
         [Route("About")]
         public IActionResult About()
         {
+            ViewBag.ShowBanner = true;
             return View();
         }
 
-        [Route("Products")]
-        public IActionResult Products()
+        [Route("Species")]
+        public IActionResult Species()
         {
+            ViewBag.ShowBanner = true;
+            return View();
+        }
+
+        [Route("Contact")]
+        public IActionResult Contact()
+        {
+            ViewBag.ShowBanner = true;
             return View();
         }
     }

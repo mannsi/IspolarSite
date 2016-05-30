@@ -26,35 +26,50 @@
     <link rel="shortcut icon" href="~/images/ipolar_logo_trans_small.gif">
 </head>
 <body>
-    <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-controller="Home" asp-action="Index" class="nav-link"><img id="logoImage" src="~/images/ipolar_logo_trans_small.gif"></a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item">
-                    <a asp-controller="Home" asp-action="Products" class="nav-link">All products</a>
-                </li>
-                <li class="nav-item">
-                    <a asp-controller="Home" asp-action="About" class="nav-link">About us</a>
-                </li>
-            </ul>
-
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a asp-controller="Home" asp-action="Index" class="nav-link"><img id="logoImage" src="~/images/ipolar_logo_trans_small.gif"></a>
         </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+                <a asp-controller="Home" asp-action="Index" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Home" asp-action="Species" class="nav-link">Species</a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Home" asp-action="About" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Home" asp-action="Contact" class="nav-link">Contact</a>
+            </li>
+        </ul>
     </div>
-    <div class="container body-content">
+</div>
+
+    @if (ViewBag.ShowBanner)
+    {
+        <div class="container-fluid">
+            <div class="row">
+                <div style="background-color: #3987c9; height: 50px; margin-top: 65px; "></div>
+            </div>
+        </div>
+    }
+
+<div class="container body-content">
         @RenderBody()
 
-        <div class="footer navbar-fixed-bottom text-center">
-            <h4 class="text-muted">Ispolar ltd - Borgartuni 30 - Tel: +354 517 8880</h4>
-        </div>
+    <div class="footer navbar-fixed-bottom text-center">
+        <h5>Ispolar ltd - Borgartuni 30 - Tel: +354 517 8880</h5>
     </div>
+</div>
 
     <environment names="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
