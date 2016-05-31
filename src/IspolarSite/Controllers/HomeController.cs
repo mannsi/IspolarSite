@@ -11,8 +11,8 @@ namespace IspolarSite.Controllers
         [Route("")]
         public IActionResult Index()
         {
-            ViewBag.ShowBanner = true;
-            ViewBag.ShowCarousel = false;
+            ViewBag.ShowBanner = false;
+            ViewBag.ShowCarousel = true;
             return View();
         }
 
